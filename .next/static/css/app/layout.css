@@ -1,0 +1,174 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --foreground-rgb: 40, 30, 10;
+  --background-start: #fffde4;
+  --background-end: #fff9c4;
+  --card-bg: #fffbe7;
+  --card-border: #ffe082;
+  --btn-bg: #ffd600;
+  --btn-hover: #ffe082;
+  --input-bg: #fffde7;
+  --input-border: #ffe082;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    var(--background-start),
+    var(--background-end)
+  );
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  padding: 32px 24px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(255, 215, 64, 0.07), 0 1.5px 4px rgba(0,0,0,0.06);
+  border: 1.5px solid var(--card-border);
+}
+
+.card, .member-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 215, 64, 0.12), 0 1.5px 4px rgba(0,0,0,0.06);
+  border: 1.5px solid var(--card-border);
+  padding: 24px 20px 20px 20px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+.card:hover, .member-card:hover {
+  box-shadow: 0 6px 24px rgba(255, 215, 64, 0.16), 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 28px;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.member-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  background: #fffde7;
+  border: 1px solid #ffe082;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid var(--input-border);
+  border-radius: 6px;
+  background: var(--input-bg);
+  font-size: 1rem;
+  margin-top: 2px;
+  transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border: 1.5px solid #ffd600;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: #5a4300;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(255, 215, 64, 0.13);
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  color: #3e2f00;
+  box-shadow: 0 2px 8px rgba(255, 215, 64, 0.18);
+}
+
+.filter-bar {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fffde7;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 1px 2px rgba(255, 215, 64, 0.09);
+}
+
+.filter-bar select, .filter-bar input {
+  min-width: 160px;
+  max-width: 220px;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background: #4299e1;
+}
+
+.btn-primary:hover {
+  background: #3182ce;
+}
+
+.btn-danger {
+  background: #e53e3e;
+}
+
+.btn-danger:hover {
+  background: #c53030;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  margin-right: 10px;
+}
+
+.filter-group select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
