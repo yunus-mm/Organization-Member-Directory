@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import MemberCard from "../components/MemberCard";
-import EditMemberModal from "../components/EditMemberModal";
+import MemberCard from "../../components/MemberCard";
+import EditMemberModal from "../../components/EditMemberModal";
 
 export default function MembersPage() {
   const [members, setMembers] = useState([]);
